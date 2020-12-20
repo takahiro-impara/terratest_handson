@@ -18,7 +18,9 @@ resource "aws_instance" "demo" {
 
   user_data = <<EOF
 IyEvYmluL2Jhc2gKc3VkbyB5dW0gaW5zdGFsbCBodHRwZCAteQpzdWRvIHNlcnZp
-Y2UgaHR0cGQgc3RhcnQ=
+Y2UgaHR0cGQgc3RhcnQKc3VkbyB0b3VjaCAvdmFyL3d3dy9odG1sL2luZGV4Lmh0
+bWwKc3VkbyBjaG1vZCAtUiA3NzcgL3Zhci93d3cvaHRtbC9pbmRleC5odG1sCnN1
+ZG8gZWNobyAiSGVsbG8gV29ybGQiPi92YXIvd3d3L2h0bWwvaW5kZXguaHRtbA==
 EOF
 
   tags = {

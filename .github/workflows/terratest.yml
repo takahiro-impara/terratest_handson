@@ -1,7 +1,9 @@
 name: 'terratest'
 
 on:
-  pull_request:
+  push:
+    branches:
+      - master
 
 jobs:
   terratest:
@@ -30,6 +32,6 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ap-northeast-1
 
-    - name: Test code
+    - name: EXECUTE terratest
       working-directory: ./dev/test/
       run: go test -v
