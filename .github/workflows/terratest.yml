@@ -1,9 +1,7 @@
 name: 'terratest'
 
 on:
-  push:
-    branches:
-      - master
+  pull_request:
 
 jobs:
   terratest:
