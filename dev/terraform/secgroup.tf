@@ -14,7 +14,7 @@ resource "aws_security_group" "secgroup" {
     to_port          = 22
     },
     {
-      cidr_blocks      = ["159.28.152.155/32"]
+      cidr_blocks      = ["0.0.0.0/0"]
       description      = "allow_http"
       from_port        = 80
       ipv6_cidr_blocks = []
