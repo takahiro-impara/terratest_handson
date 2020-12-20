@@ -4,6 +4,10 @@ provider "aws" {
   //secret_key = var.aws_secret
 }
 
+terraform {
+  required_version = "= 0.13.5"
+}
+
 resource "aws_vpc" "vpc" {
   cidr_block = "10.10.0.0/16"
   tags = {
