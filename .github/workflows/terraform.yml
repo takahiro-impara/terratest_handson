@@ -35,6 +35,10 @@ jobs:
       working-directory: ./dev/terraform/
       run: terraform fmt
 
+    - name: Terraform Validate
+      working-directory: ./dev/terraform/
+      run: terraform validate
+
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       working-directory: ./dev/terraform/
